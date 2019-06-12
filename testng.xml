@@ -10,8 +10,7 @@
 		<!-- <parameter name="browser" value="chrome"></parameter>  -->	
 			<parameter name="browser" value="firefox"></parameter>
 				<classes>
-
+				<class name="com.nmc.api.testcases.TestRegistrationPage"/>
 				</classes>
 		</test>
-
 </suite>

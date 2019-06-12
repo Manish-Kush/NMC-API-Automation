@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NMC-Registration]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.nmc.api.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Registration Automation(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.nmc.api.testcases.TestRegistrationPage">
+        <methods>
+          <include name="testOspRegistration"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.nmc.api.testcases.TestRegistrationPage -->
+    </classes>
+  </test> <!-- Registration Automation(failed) -->
+</suite> <!-- Failed suite [NMC-Registration] -->
