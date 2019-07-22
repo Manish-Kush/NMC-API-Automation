@@ -5,20 +5,24 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class WriteIntoExcelFile {
+import com.nmc.api.utilities.ReadConfigFile;
+import com.nmc.api.utilities.XLUtils;
 
+public class WriteIntoExcelFile
+{
+	ReadConfigFile readConfigFile;
 	public void writeUniqueFieldsIntoExcel() throws IOException
 	
 	{
+		readConfigFile = new ReadConfigFile();
 		NameAndPhoneNumAndOldRegProvider dataProvider = new NameAndPhoneNumAndOldRegProvider();
 		
-		String xlDataPath = "/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/testdata/registrationData.xlsx";
-		
-		 File file = new File(xlDataPath);
+		 File file = new File(readConfigFile.getExcelRegistrationDataPath());
 		 FileInputStream fis = new FileInputStream(file);
 		 
 		 XSSFWorkbook wb = new XSSFWorkbook(fis);
@@ -41,6 +45,33 @@ public class WriteIntoExcelFile {
 		
 		System.out.println("Written sucessfully");
 		}
+	
+	public void writeRegistrationIntoExcel(String registeredInfo, int columnNum) throws IOException
+	{	
+		File file = new File(readConfigFile.getExcelRegInfoDataPath());
+		FileInputStream fis = new FileInputStream(file);
+		 
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		 
+		XSSFSheet sh = wb.getSheet(readConfigFile.getExcelRegInfoDataSheetName());
+		
+		int row = XLUtils.getRowCount(readConfigFile.getExcelRegInfoDataPath(), readConfigFile.getExcelRegInfoDataSheetName());
+		
+		if(columnNum == 0)
+			{
+			System.out.println("Entered");
+			  sh.createRow(row+1);
+			  row++;
+			}
+		
+		
+		sh.getRow(row).createCell(columnNum).setCellValue(registeredInfo);//enter reg info into excel
+		
+		FileOutputStream fos = new FileOutputStream(file);
+		wb.write(fos);		 
+		fos.close();
+		System.out.println("Written new patient data into excel sucessfully");
+	}
 		
 		public static void main(String[] args) throws IOException
 		{

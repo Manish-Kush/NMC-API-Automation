@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-NMC-Registration">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NMC-Registration" title="com.nmc.api.testcases.TestRegistrationPage" class="method navigator-link" hash-for-method="testOspRegistration">testOspRegistration</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NMC-Registration" title="com.nmc.api.testcases.TestRegistrationPage" class="method navigator-link" hash-for-method="testOpRegistration">testOpRegistration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-NMC-Registration -->
@@ -139,26 +139,12 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testOspRegistration">
-                  </a> <!-- testOspRegistration -->
-                  <span class="method-name">testOspRegistration</span>
-                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: 
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;manish-Latitude-3460&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.18.0-21-generic&apos;, java.version: &apos;11.0.3&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190530055249, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14749, moz:profile: /tmp/rust_mozprofile.cD5IbQ..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.18.0-21-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 12cd9d45-7caa-46b1-aaa1-80d2064b5483
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
-	at com.nmc.api.modules.RegistrationScreen.ospRegistration(RegistrationScreen.java:666)
-	at com.nmc.api.testcases.TestRegistrationPage.testOspRegistration(TestRegistrationPage.java:36)
-... Removed 29 stack frames
+                  <a name="testOpRegistration">
+                  </a> <!-- testOpRegistration -->
+                  <span class="method-name">testOpRegistration</span>
+                  <div class="stack-trace">java.lang.AssertionError: OP Registration was unsuccessful.!! expected [true] but found [false]
+	at com.nmc.api.testcases.TestRegistrationPage.testOpRegistration(TestRegistrationPage.java:34)
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -237,18 +223,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testOspRegistration')
+data.setCell(0, 1, 'testOpRegistration')
 data.setCell(0, 2, 'com.nmc.api.testcases.TestRegistrationPage')
-data.setCell(0, 3, 33160);
+data.setCell(0, 3, 51053);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testLogin')
 data.setCell(1, 2, 'com.nmc.api.testcases.TestRegistrationPage')
-data.setCell(1, 3, 2603);
+data.setCell(1, 3, 2604);
 window.suiteTableData['NMC-Registration']= { tableData: data, tableDiv: 'times-div-NMC-Registration'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-NMC-Registration">
               </div> <!-- times-div-NMC-Registration -->
             </div> <!-- times-div -->
@@ -281,13 +267,13 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testLogin</span>
-                <span class="method-start">8166 ms</span>
+                <span class="method-start">7390 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testOspRegistration</span>
-                <span class="method-start">10787 ms</span>
+                <span class="method-name">testOpRegistration</span>
+                <span class="method-start">10016 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

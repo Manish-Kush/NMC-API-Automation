@@ -1,0 +1,10 @@
+/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/modules/RegistrationScreen.java
+/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/generic/WriteIntoExcelFile.java
+/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/utilities/ReadConfigFile.java
+/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/utilities/CommonActionUtils.java
+/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/utilities/Reporting.java
+/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/generic/CopyDataFromSuccessAndWriteIntoExcel.java
+/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/generic/NameAndPhoneNumAndOldRegProvider.java
+/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/generic/BaseClass.java
+/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/utilities/XLUtils.java
+/home/manish/Desktop/ReportFromRepository/NMC-API-Automation/src/test/java/com/nmc/api/testcases/TestRegistrationPage.java

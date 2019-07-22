@@ -29,42 +29,53 @@ public class ReadConfigFile
 	
 	//Now to read values form properties file we will be creating method for each variables
 	
-	public String getChromePath()
-	{
+	public String getChromePath(){
 		String chromePath =properties.getProperty("chromePath");// case sensitive
 		return chromePath;
 	}
 	
-	public String getFirefoxPath()
-	{
+	public String getFirefoxPath(){
 		return properties.getProperty("firefoxPath");
 	}
 	
-	public String getIEPath()
-	{
+	public String getIEPath(){
 		return properties.getProperty("iePath");
 	}
 	
-	public String getApplicationURL()
-	{
+	public String getApplicationURL(){
 		return	properties.getProperty("baseURL");
 	}
 	
-	public String getUserName()
-	{
+	public String getUserName(){
 		return properties.getProperty("userName");
 	}
 	
-	public String getPassword()
-	{
+	public String getPassword(){
 		return properties.getProperty("password");
 	}
-	public String getCenterName()
-	{
-		return properties.getProperty("centerName");
-	}
-	public String getHomePageUrl()
-	{
+	
+	public String getHomePageUrl(){
 		return properties.getProperty("homePageUrl");
+	}
+	
+	public String getExcelLocatorPath(){
+		return properties.getProperty("excelLocatorPath");
+	}
+	public String getExcelLocatorSheetName(){
+		return properties.getProperty("excelLocatorSheetName");
+	}
+	
+	public String getExcelRegistrationDataPath(){
+		return properties.getProperty("excelRegistrationDataPath");
+	}
+	public String getExcelRegistrationDataSheetName(){
+		return properties.getProperty("excelRegistrationDataSheetName");
+	}
+	
+	public String getExcelRegInfoDataPath(){
+		return properties.getProperty("excelRegInfoDataPath");
+	}
+	public String getExcelRegInfoDataSheetName(){
+		return properties.getProperty("excelRegInfoDataSheetName");
 	}
 }

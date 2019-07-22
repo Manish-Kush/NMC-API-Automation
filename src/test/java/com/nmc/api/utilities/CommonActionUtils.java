@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class CommonActionUtils 
 {
-	//
+	
 	public static void clickById(String id, WebDriver driver) {
 		driver.findElement(By.id(id)).click();
 	}
@@ -70,6 +70,17 @@ public class CommonActionUtils
 	public static void clearElementById(String id, WebDriver driver) 
 	{
 		driver.findElement(By.id(id)).clear();
+	}
+	
+	public static String getAttributeValueUsingId(String id,String value,WebDriver driver)
+	{
+		//String value="";// this is used to get the value from text field
+		return	driver.findElement(By.id(id)).getAttribute(value);
+	}
+	public static String getAttributeValueUsingName(String name,String value,WebDriver driver)
+	{
+		//String value="";// this is used to get the value from text field
+		return	driver.findElement(By.name(name)).getAttribute(value);
 	}
 
 }

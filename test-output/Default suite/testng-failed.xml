@@ -5,8 +5,11 @@
     <classes>
       <class name="com.nmc.api.testcases.TestRegistrationPage">
         <methods>
+          <include name="testIpRegistration"/>
           <include name="testOspRegistration"/>
+          <include name="testPreRegistration"/>
           <include name="setUp"/>
+          <include name="testOpRegistration"/>
           <include name="testLogin"/>
         </methods>
       </class> <!-- com.nmc.api.testcases.TestRegistrationPage -->
